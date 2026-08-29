@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservação da Biodiversidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <style>
+        .btn-voltar {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.4);
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .btn-voltar:hover {
+            background-color: #1b5e20;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(46, 125, 50, 0.5);
+        }
+
+        .btn-voltar:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(46, 125, 50, 0.4);
+        }
+
+        .btn-voltar svg {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-voltar:hover svg {
+            transform: translateX(-3px);
+        }
+
+        
+        @media (max-width: 768px) {
+            .btn-voltar {
+                padding: 10px 18px;
+                font-size: 14px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .btn-voltar span {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn-voltar {
+                padding: 8px 12px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="btn-voltar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5"></path>
+            <path d="M12 19l-7-7 7-7"></path>
+        </svg>
+        <span>Retornar</span>
+    </a>
+
+    <header>
+        <nav>
+            <div class="logo">BioDiversidade</div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#rural">Áreas Rurais</a></li>
+                <li><a href="#urbano">Áreas Urbanas</a></li>
+                <li><a href="#pesquisas">Pesquisas</a></li>
+                <li><a href="#estrategias">Estratégias</a></li>
+                <li><a href="#reflexoes">Reflexões</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <div class="banner-overlay">
+            <h1>Conservação da Biodiversidade</h1>
+            <p>Estratégias e soluções para preservar a biodiversidade em áreas rurais e urbanas</p>
+            <a href="#inicio" class="btn-saiba-mais">Saiba mais ↓</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="inicio" class="secao">
+            <h2>Biodiversidade: Nossa Maior Riqueza</h2>
+            <p class="descricao">
+                A biodiversidade é essencial para a manutenção da vida na Terra, fornecendo serviços ecossistêmicos 
+                fundamentais como polinização, controle de pragas, purificação da água e regulação climática. 
+                Sua conservação é vital tanto em ambientes rurais quanto urbanos.
+            </p>
+        </section>
+
+        <section id="rural" class="secao">
+            <h2>Conservação em Áreas Rurais</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🌳</div>
+                    <h3>Corredores Ecológicos</h3>
+                    <p>Conexões entre fragmentos de habitat que permitem o movimento de espécies, aumentando a viabilidade das populações e reduzindo os efeitos da fragmentação.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Agricultura Sustentável</h3>
+                    <p>Práticas agrícolas que minimizam o impacto ambiental, como rotação de culturas, controle biológico de pragas e agricultura orgânica.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💧</div>
+                    <h3>Proteção de Nascentes</h3>
+                    <p>Preservação das áreas de nascentes e matas ciliares, essenciais para a manutenção dos recursos hídricos e habitat para diversas espécies.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🦋</div>
+                    <h3>Reservas Particulares</h3>
+                    <p>Áreas privadas destinadas à conservação da biodiversidade, complementando o sistema público de unidades de conservação.</p>
+                </div>
+            </div>
+            
+            <div class="rural-content">
+                <h3 class="subtitulo">Desafios da Conservação Rural</h3>
+                <p>
+                    As áreas rurais enfrentam desafios significativos para a conservação da biodiversidade, incluindo a expansão 
+                    agrícola, fragmentação de habitats, uso de agroquímicos e mudanças climáticas. Segundo dados da FAO (Organização 
+                    das Nações Unidas para Alimentação e Agricultura), cerca de 80% do desmatamento global é resultado da conversão 
+                    de florestas em áreas agrícolas.
+                </p>
+                <p>
+                    No Brasil, o Código Florestal estabelece a obrigatoriedade de manutenção de Áreas de Preservação Permanente (APPs) 
+                    e Reserva Legal nas propriedades rurais, contribuindo para a conservação da biodiversidade em paisagens produtivas. 
+                    Estudos mostram que propriedades que mantêm estas áreas preservadas apresentam maior diversidade de polinizadores 
+                    e inimigos naturais de pragas, resultando em benefícios para a própria produção agrícola.
+                </p>
+            </div>
+        </section>
+
+        <section id="urbano" class="secao estatisticas">
+            <h2>Biodiversidade nas Cidades</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🏞️</div>
+                    <h3>Parques Urbanos</h3>
+                    <p>Espaços que funcionam como refúgios para a biodiversidade nas cidades, oferecendo habitat para diversas espécies e serviços ecossistêmicos para a população.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌿</div>
+                    <h3>Telhados e Paredes Verdes</h3>
+                    <p>Infraestrutura verde que aumenta a cobertura vegetal nas cidades, criando novos habitats, melhorando o microclima urbano e reduzindo o efeito de ilha de calor.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌊</div>
+                    <h3>Jardins de Chuva</h3>
+                    <p>Soluções baseadas na natureza para gestão de águas pluviais que também criam habitats para polinizadores e outras espécies urbanas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🦜</div>
+                    <h3>Corredores Urbanos</h3>
+                    <p>Conexões verdes entre parques e áreas naturais urbanas, permitindo o deslocamento da fauna e aumentando a biodiversidade nas cidades.</p>
+                </div>
+            </div>
+            
+            <div class="urbano-content">
+                <h3 class="subtitulo">A Importância da Natureza nas Cidades</h3>
+                <p>
+                    Estudos recentes demonstram que áreas urbanas podem abrigar uma surpreendente diversidade de espécies. 
+                    Pesquisas conduzidas em cidades como São Paulo, Rio de Janeiro e Curitiba identificaram centenas de espécies 
+                    de aves, insetos e plantas nativas em parques urbanos e áreas verdes, destacando o potencial das cidades 
+                    para a conservação da biodiversidade.
+                </p>
+                <p>
+                    Além dos benefícios para a fauna e flora, a presença de áreas verdes nas cidades está associada a melhorias 
+                    na saúde física e mental dos habitantes urbanos. Um estudo publicado na revista The Lancet mostrou que pessoas 
+                    que vivem próximas a áreas verdes têm menor incidência de doenças cardiovasculares, respiratórias e mentais.
+                </p>
+            </div>
+        </section>
+
+        <section id="pesquisas" class="secao">
+            <h2>Pesquisas e Estudos Científicos</h2>
+            
+            <div class="pesquisas-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="rural-tab">Pesquisas em Áreas Rurais</button>
+                    <button class="tab-button" data-tab="urbano-tab">Pesquisas em Áreas Urbanas</button>
+                </div>
+                
+                <div class="tab-content active" id="rural-tab">
+                    <div class="pesquisa-item">
+                        <h3>Fragmentação de Habitats e Biodiversidade</h3>
+                        <p>
+                            Pesquisadores da Universidade de São Paulo (USP) e da EMBRAPA conduziram um estudo de 10 anos em fragmentos 
+                            florestais da Mata Atlântica, demonstrando que fragmentos conectados por corredores ecológicos mantêm em média 
+                            35% mais espécies de aves e mamíferos do que fragmentos isolados de tamanho similar.
+                        </p>
+                        <p>
+                            O estudo também revelou que a diversidade genética das populações em fragmentos conectados é significativamente 
+                            maior, reduzindo os riscos de endogamia e aumentando a resiliência das espécies frente às mudanças ambientais.
+                        </p>
+                        <div class="pesquisa-fonte">Fonte: Revista Brasileira de Biodiversidade e Conservação, 2023</div>
+                    </div>
+                    
+                    <div class="pesquisa-item">
+                        <h3>Sistemas Agroflorestais e Conservação</h3>
+                        <p>
+                            Um estudo comparativo realizado em propriedades rurais no Cerrado brasileiro demonstrou que sistemas agroflorestais 
+                            (SAFs) abrigam em média 4 vezes mais espécies de aves e 3 vezes mais espécies de insetos polinizadores do que 
+                            monoculturas convencionais na mesma região.
+                        </p>
+                        <p>
+                            Os SAFs também apresentaram maior capacidade de sequestro de carbono, melhor conservação do solo e maior 
+                            resistência a períodos de seca, evidenciando seu potencial como estratégia de adaptação às mudanças climáticas.
+                        </p>
+                        <div class="pesquisa-fonte">Fonte: Agroecology and Sustainable Food Systems, 2024</div>
+                    </div>
+                    
+                    <div class="pesquisa-item">
+                        <h3>Pagamento por Serviços Ambientais</h3>
+                        <p>
+                            Um programa de Pagamento por Serviços Ambientais (PSA) implementado na região da Serra da Mantiqueira resultou 
+                            em um aumento de 28% na cobertura florestal em cinco anos, com a recuperação de mais de 3.000 hectares de áreas 
+                            degradadas e a proteção de 200 nascentes.
+                        </p>
+                        <p>
+                            O monitoramento da biodiversidade nas áreas recuperadas registrou o retorno de 15 espécies de mamíferos que 
+                            estavam localmente extintas, incluindo a onça-parda (Puma concolor) e o lobo-guará (Chrysocyon brachyurus).
+                        </p>
+                        <div class="pesquisa-fonte">Fonte: Conservação Internacional Brasil, 2023</div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="urbano-tab">
+                    <div class="pesquisa-item">
+                        <h3>Biodiversidade em Parques Urbanos</h3>
+                        <p>
+                            Um levantamento realizado em 20 parques urbanos de diferentes tamanhos em São Paulo identificou mais de 
+                            300 espécies de aves, 150 espécies de borboletas e 400 espécies de plantas nativas, demonstrando o 
+                            potencial das áreas verdes urbanas para a conservação da biodiversidade.
+                        </p>
+                        <p>
+                            O estudo revelou que parques com maior diversidade de ambientes (lagos, bosques, áreas abertas) e com 
+                            vegetação nativa apresentam maior riqueza de espécies, destacando a importância do planejamento e manejo 
+                            adequado desses espaços.
+                        </p>
+                        <div class="pesquisa-fonte">Fonte: Instituto de Biociências da USP, 2023</div>
+                    </div>
+                    
+                    <div class="pesquisa-item">
+                        <h3>Infraestrutura Verde e Serviços Ecossistêmicos</h3>
+                        <p>
+                            Pesquisadores da Universidade Federal do Rio de Janeiro (UFRJ) quantificaram os serviços ecossistêmicos 
+                            fornecidos pela infraestrutura verde urbana, demonstrando que cada hectare de área verde bem manejada 
+                            pode filtrar até 100 kg de poluentes atmosféricos por ano, reduzir a temperatura local em até 4°C e 
+                            absorver até 300 mil litros de água pluvial.
+                        </p>
+                        <p>
+                            O estudo também estimou o valor econômico desses serviços, concluindo que cada real investido em 
+                            infraestrutura verde urbana gera uma economia de R$ 5 a R$ 10 em custos de saúde pública, gestão de 
+                            enchentes e energia para climatização.
+                        </p>
+                        <div class="pesquisa-fonte">Fonte: Revista Brasileira de Gestão Urbana, 2024</div>
+                    </div>
+                    
+                    <div class="pesquisa-item">
+                        <h3>Jardins Comunitários e Engajamento Social</h3>
+                        <p>
+                            Um estudo de caso sobre jardins comunitários em Curitiba demonstrou que, além de aumentar a biodiversidade 
+                            urbana, esses espaços promovem maior coesão social, educação ambiental e segurança alimentar. Os 15 jardins 
+                            comunitários estudados abrigavam em média 70 espécies de plantas, incluindo muitas espécies nativas e 
+                            variedades tradicionais de hortaliças.
+                        </p>
+                        <p>
+                            O monitoramento participativo da biodiversidade nesses jardins registrou um aumento de 45% na abundância 
+                            de polinizadores e 30% na diversidade de aves em comparação com áreas urbanas similares sem jardins.
+                        </p>
+                        <div class="pesquisa-fonte">Fonte: Urban Ecosystems, 2023</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impactos" class="secao">
+            <h2>Impactos da Perda de Biodiversidade</h2>
+            <div class="numeros">
+                <div class="numero-item">
+                    <div class="numero">1M</div>
+                    <div class="numero-descricao">espécies ameaçadas de extinção</div>
+                </div>
+                <div class="numero-item">
+                    <div class="numero">75%</div>
+                    <div class="numero-descricao">dos ambientes terrestres alterados</div>
+                </div>
+                <div class="numero-item">
+                    <div class="numero">66%</div>
+                    <div class="numero-descricao">dos oceanos impactados</div>
+                </div>
+                <div class="numero-item">
+                    <div class="numero">40%</div>
+                    <div class="numero-descricao">declínio de polinizadores</div>
+                </div>
+            </div>
+            
+            <div class="impactos-content">
+                <p>
+                    De acordo com o relatório da Plataforma Intergovernamental sobre Biodiversidade e Serviços Ecossistêmicos (IPBES), 
+                    a taxa atual de extinção de espécies é pelo menos dezenas a centenas de vezes maior do que a média dos últimos 
+                    10 milhões de anos. Estima-se que cerca de 1 milhão de espécies de animais e plantas estejam ameaçadas de extinção.
+                </p>
+                <p>
+                    A perda de biodiversidade compromete a segurança alimentar, a disponibilidade de água potável, a regulação climática 
+                    e a saúde humana. Estudos recentes estimam que o valor econômico dos serviços ecossistêmicos perdidos devido à 
+                    degradação ambiental ultrapassa US$ 20 trilhões por ano em escala global.
+                </p>
+            </div>
+        </section>
+
+        <section id="estrategias" class="secao">
+            <h2>Estratégias de Conservação</h2>
+            <div class="sustentabilidade-cards">
+                <div class="sustentabilidade-card">
+                    <h3>Educação Ambiental</h3>
+                    <p>
+                        A educação ambiental é fundamental para sensibilizar a população sobre a importância da biodiversidade 
+                        e promover mudanças de comportamento. Programas educativos em escolas, comunidades e meios de comunicação 
+                        podem aumentar o conhecimento sobre espécies locais e seus habitats, promover práticas sustentáveis no 
+                        dia a dia e incentivar a participação em iniciativas de conservação.
+                    </p>
+                    <p>
+                        Pesquisas mostram que escolas com programas de educação ambiental bem estruturados formam estudantes com 
+                        maior consciência ecológica e mais propensos a adotar comportamentos sustentáveis ao longo da vida.
+                    </p>
+                </div>
+                <div class="sustentabilidade-card">
+                    <h3>Políticas Públicas</h3>
+                    <p>
+                        Políticas e legislações adequadas são essenciais para garantir a conservação da biodiversidade a longo prazo. 
+                        Algumas medidas importantes incluem a criação e manutenção de unidades de conservação, incentivos fiscais para 
+                        práticas sustentáveis, regulamentação do uso do solo e planejamento territorial, e implementação de pagamentos 
+                        por serviços ambientais.
+                    </p>
+                    <p>
+                        Um estudo comparativo entre diferentes regiões do Brasil demonstrou que áreas com políticas públicas mais 
+                        robustas de conservação apresentaram taxas de desmatamento 60% menores e maior recuperação de áreas degradadas.
+                    </p>
+                </div>
+                <div class="sustentabilidade-card">
+                    <h3>Participação Comunitária</h3>
+                    <p>
+                        O envolvimento das comunidades locais é crucial para o sucesso das iniciativas de conservação. 
+                        Estratégias participativas podem incluir ciência cidadã e monitoramento participativo da biodiversidade, 
+                        gestão compartilhada de recursos naturais, projetos de restauração ecológica com participação comunitária 
+                        e valorização do conhecimento tradicional sobre a biodiversidade local.
+                    </p>
+                    <p>
+                        Projetos de conservação com forte envolvimento comunitário têm 3 vezes mais chances de atingir seus objetivos 
+                        a longo prazo, segundo uma meta-análise de 200 iniciativas de conservação em diferentes biomas brasileiros.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="casos" class="secao">
+            <h2>Casos de Sucesso</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-icon">🌎</div>
+                    <h3>Corredor Ecológico da Mata Atlântica</h3>
+                    <p>Iniciativa que conecta fragmentos florestais da Mata Atlântica, permitindo o fluxo gênico entre populações isoladas e aumentando a resiliência do ecossistema.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏙️</div>
+                    <h3>Parques Lineares de São Paulo</h3>
+                    <p>Parques ao longo de cursos d'água que combinam conservação da biodiversidade, controle de enchentes e lazer para a população urbana.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌾</div>
+                    <h3>Sistemas Agroflorestais</h3>
+                    <p>Integração de árvores, cultivos agrícolas e/ou criação de animais que promove a biodiversidade e a produção sustentável de alimentos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🐝</div>
+                    <h3>Corredores de Polinizadores</h3>
+                    <p>Redes de habitats florais em áreas urbanas e rurais que apoiam populações de polinizadores, essenciais para a agricultura e ecossistemas naturais.</p>
+                </div>
+            </div>
+            
+            <div class="casos-detalhes">
+                <h3 class="subtitulo">Resultados Mensuráveis</h3>
+                <p>
+                    O Corredor Ecológico da Mata Atlântica, após 15 anos de implementação, resultou em um aumento de 12% na cobertura 
+                    florestal na região, com a recuperação de mais de 100.000 hectares de áreas degradadas. O monitoramento da 
+                    biodiversidade registrou um aumento de 30% na riqueza de espécies de mamíferos e 25% na diversidade de aves.
+                </p>
+                <p>
+                    Os Parques Lineares de São Paulo, além de contribuírem para a conservação da biodiversidade urbana, reduziram 
+                    em 70% a ocorrência de enchentes nas áreas onde foram implementados e proporcionaram espaços de lazer para mais 
+                    de 2 milhões de pessoas. Estudos de valoração econômica estimam que cada real investido nesses parques gera um 
+                    retorno de R$ 7 em benefícios socioambientais.
+                </p>
+            </div>
+        </section>
+
+        <section id="reflexoes" class="secao">
+            <h2>Reflexões sobre Biodiversidade</h2>
+            <div class="reflexoes-container">
+                <div class="reflexao-texto">
+                    <p>
+                        A biodiversidade representa muito mais que um simples inventário de espécies – é a teia da vida que sustenta 
+                        todos os ecossistemas e, por consequência, a própria existência humana. Cada espécie, por mais insignificante 
+                        que possa parecer, desempenha um papel único e insubstituível no equilíbrio dos ecossistemas.
+                    </p>
+                    <p>
+                        Quando perdemos uma espécie, não perdemos apenas um elemento da natureza, mas também todas as interações 
+                        ecológicas, possibilidades evolutivas e potenciais benefícios que essa espécie poderia proporcionar. 
+                        Muitas plantas e animais desaparecem antes mesmo de serem descobertos pela ciência, levando consigo 
+                        segredos que poderiam revolucionar a medicina, a agricultura ou a tecnologia.
+                    </p>
+                    <p>
+                        A conservação da biodiversidade não é apenas uma questão ambiental, mas também ética, cultural e econômica. 
+                        Trata-se de preservar o patrimônio natural que herdamos e que temos a responsabilidade de transmitir às 
+                        futuras gerações. Como disse o biólogo Edward O. Wilson: "A diversidade da vida não é um luxo, mas uma 
+                        necessidade para a sobrevivência da nossa própria espécie".
+                    </p>
+                    <p>
+                        Cada pequena ação em favor da biodiversidade, seja em áreas rurais ou urbanas, contribui para um futuro 
+                        mais sustentável. A natureza não precisa de nós para existir, mas nós certamente precisamos dela. 
+                        Proteger a biodiversidade é, em última análise, proteger a nós mesmos e garantir a continuidade da 
+                        extraordinária aventura da vida na Terra.
+                    </p>
+                </div>
+                <div class="reflexao-citacao">
+                    <blockquote>
+                        "Na natureza, nada se cria, nada se perde, tudo se transforma. E na teia da vida, cada fio é essencial 
+                        para manter a integridade do todo."
+                    </blockquote>
+                    <div class="citacao-autor">— Adaptado de Antoine Lavoisier</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>BioDiversidade Brasil</h3>
+                <p>
+                    Trabalhos realizados  para conservação da biodiversidade em áreas rurais e urbanas, promovendo o equilíbrio 
+                    ecológico e a sustentabilidade para as gerações atuais e futuras.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>fontes</h3>
+                <ul>
+                    <li><a href="https://www.gov.br/icmbio/pt-br" target="_blank">ICMBio</a></li>
+                    <li><a href="https://www.gov.br/mma/pt-br" target="_blank">Ministério do Meio Ambiente</a></li>
+                    <li><a href="https://www.iucn.org/" target="_blank">IUCN</a></li>
+                    <li><a href="https://www.wwf.org.br/" target="_blank">WWF Brasil</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>&copy; By Alexandre.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
